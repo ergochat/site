@@ -9,7 +9,7 @@ classes: about
 
 <div class="buttons">
     <!-- <a class="button" href="/">Landing Page</a> -->
-    <a class="button" href="/about.html">Server</a>
+    <a class="button" href="/about.html">Software</a>
     <a class="button" href="#">Network</a>
 </div>
 
