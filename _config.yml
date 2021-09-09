@@ -3,6 +3,7 @@ exclude:
   - CNAME
   - Gemfile
   - Gemfile.lock
+  - LICENSE
 plugins:
   - jekyll-sitemap
   - jekyll-redirect-from

@@ -8,10 +8,10 @@
   --content_font_family: "Open Sans", sans-serif;
   --mono_font_family: Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", Monaco, "Courier New", Courier, monospace;
 
-  --homepage-toppane-bg: #fdf8e1;
-  --homepage-bottompane-bg: #527328;
-  --homepage-subtitle-color: #fff4c7;
-  --homepage-button-bg: #fff8da;
+  --homepage-toppane-bg: #fcfeeb;
+  --homepage-bottompane-bg: #4e6f21;
+  --homepage-subtitle-color: #e6ebbc;
+  --homepage-button-bg: #f2f3d1;
   --homepage-button-bg-hover: #fff9e1;
   --homepage-button-bg-press: #f5e39e;
   --homepage-button-color: #2c2a23;
@@ -37,7 +37,7 @@ body.about {
       text-align: center;
       padding: 3em 0 2em;
       img {
-        height: 12em;
+        height: 10em;
       }
     }
     li + li {
@@ -47,6 +47,23 @@ body.about {
       width: 50%;
       margin: 2em auto;
       border-color: #86c03b;
+    }
+    .buttons {
+      margin: -1em 0 2em;
+      text-align: center;
+      .button {
+        display: inline-block;
+        font-size: 1.2em;
+        padding: .6em .8em;
+        border-radius: .6em;
+        color: var(--homepage-button-color);
+        font-weight: 600;
+        text-decoration: none;
+        transition: background 0.1s cubic-bezier(0.65, 0, 0.35, 1);
+        + .button {
+          margin-left: .8em;
+        }
+      }
     }
   }
 }
@@ -69,17 +86,17 @@ body.homepage {
   > .logo {
     background: var(--homepage-toppane-bg);
     text-align: center;
-    padding-bottom: 1.3em;
+    padding-bottom: 1.7em;
     img {
       margin: 0 auto;
-      height: 12em;
+      height: 10em;
     }
   }
   > .content {
     background: var(--homepage-bottompane-bg);
     text-align: center;
     .subtitle {
-      margin-top: .6em;
+      margin-top: .7em;
       font-size: 2em;
       color: var(--homepage-subtitle-color);
     }
