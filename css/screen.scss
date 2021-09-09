@@ -23,6 +23,34 @@ html, body {
   height: 100%;
 }
 
+// about page
+//
+body.about {
+  background: var(--homepage-toppane-bg);
+  > div {
+    padding: 1em;
+    width: 55em;
+    max-width: 100%;
+    margin: 0 auto;
+    .logo {
+      display: block;
+      text-align: center;
+      padding: 3em 0 2em;
+      img {
+        height: 12em;
+      }
+    }
+    li + li {
+      margin-top: .7em;
+    }
+    hr {
+      width: 50%;
+      margin: 2em auto;
+      border-color: #86c03b;
+    }
+  }
+}
+
 // homepage
 //
 body.homepage {
