@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+    <head>
+        <title>{% if page.html_title %}{{ page.html_title }}{% else %}{{ page.title }}{% endif %}</title>
+
+        <link href="/css/open-sans.css" rel="stylesheet" type="text/css" />
+        <link href="/css/modern-normalize.css" rel="stylesheet" type="text/css" />
+        <link href="/css/screen.css" rel="stylesheet" type="text/css" />
+
+        <meta charset='utf-8'>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    </head>
+    <body class="{{ page.classes }}">
+        {{ content }}
+    </body>
+</html>

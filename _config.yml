@@ -1,0 +1,9 @@
+exclude:
+  - README.md
+  - CNAME
+  - Gemfile
+  - Gemfile.lock
+plugins:
+  - jekyll-sitemap
+  - jekyll-redirect-from
+  - jekyll-sass-converter
