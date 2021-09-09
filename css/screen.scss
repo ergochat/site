@@ -27,6 +27,7 @@ html, body {
 //
 body.about {
   background: var(--homepage-toppane-bg);
+  overflow-y: scroll;
   > div {
     padding: 1em;
     width: 55em;
@@ -51,6 +52,9 @@ body.about {
     .buttons {
       margin: -1em 0 2em;
       text-align: center;
+      + .buttons {
+        margin-top: -2em;
+      }
       .button {
         display: inline-block;
         font-size: 1.2em;
@@ -102,6 +106,9 @@ body.homepage {
     }
     .buttons {
       margin-top: 2.4em;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
     }
     .button {
       display: inline-block;
@@ -114,7 +121,7 @@ body.homepage {
       text-decoration: none;
       transition: background 0.1s cubic-bezier(0.65, 0, 0.35, 1);
       + .button {
-        margin-left: .8em;
+        margin-top: .8em;
       }
       &:hover {
         background: var(--homepage-button-bg-hover);
