@@ -3,13 +3,14 @@ layout: default
 ---
 <div>
     <a class="logo" href="/">
-        <img src="img/ergo-logo-dark-server.svg" title="Ergo IRC Server">
+        <img src="/img/{% if page.logo %}{{ page.logo }}{% elsif layout.logo %}{{ layout.logo }}{% else %}ergo-logo-dark-server.svg{% endif %}" title="Ergo IRC Server">
     </a>
 
     <div class="buttons">
         <a class="button" href="/about.html">Software</a>
         <a class="button" href="/about-network.html">Network</a>
         <a class="button" href="/nope.html">Specs</a>
+        <a class="button" href="/news.html">News</a>
     </div>
 
     {% if page.buttons %}
