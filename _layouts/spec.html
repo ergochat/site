@@ -1,0 +1,21 @@
+---
+layout: about
+classes: spec
+buttons:
+    - text: "`ergo.chat/nope`"
+      href: "/nope.html"
+---
+<h1>{{ page.title | markdownify | replace:'<p>','' | replace:'</p>','' }}</h1>
+
+{% if page.copyrights %}
+
+<div class="copyrights">
+{% for copyright in page.copyrights %}
+<p>Copyright &copy; {{ copyright.period }} {{ copyright.name }} &lt;{{ copyright.email }}&gt;</p>
+{% endfor %}
+<p>Unlimited redistribution and modification of this document is allowed.</p>
+</div>
+
+{% endif %}
+
+{{ page.content | markdownify }}

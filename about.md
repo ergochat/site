@@ -2,24 +2,16 @@
 title: Ergo IRC Server
 layout: about
 classes: about
+buttons:
+    - text: GitHub
+      href: "https://github.com/ergochat/ergo"
+    - text: Latest Release
+      href: "https://github.com/ergochat/ergo/releases"
+    - text: Admin Manual
+      href: "https://github.com/ergochat/ergo/blob/master/docs/MANUAL.md#introduction"
+    - text: User Guide
+      href: "https://github.com/ergochat/ergo/blob/master/docs/USERGUIDE.md#introduction"
 ---
-<a class="logo" href="/">
-    <img src="img/ergo-logo-dark-server.svg" title="Ergo IRC Server">
-</a>
-
-<div class="buttons">
-    <!-- <a class="button" href="/">Landing Page</a> -->
-    <a class="button" href="#">Software</a>
-    <a class="button" href="/about-network.html">Network</a>
-</div>
-
-<div class="buttons">
-    <a class="button" href="https://github.com/ergochat/ergo">GitHub</a>
-    <a class="button" href="https://github.com/ergochat/ergo/releases">Latest Release</a>
-    <a class="button" href="https://github.com/ergochat/ergo/blob/master/docs/MANUAL.md#introduction">Admin Manual</a>
-    <a class="button" href="https://github.com/ergochat/ergo/blob/master/docs/USERGUIDE.md#introduction">User Guide</a>
-</div>
-
 Ergo is a modern IRCd (IRC server software) written in Go.
 
 Our core design principles are:

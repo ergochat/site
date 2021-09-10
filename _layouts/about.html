@@ -2,5 +2,31 @@
 layout: default
 ---
 <div>
+    <a class="logo" href="/">
+        <img src="img/ergo-logo-dark-server.svg" title="Ergo IRC Server">
+    </a>
+
+    <div class="buttons">
+        <a class="button" href="/about.html">Software</a>
+        <a class="button" href="/about-network.html">Network</a>
+        <a class="button" href="/nope.html">Specs</a>
+    </div>
+
+    {% if page.buttons %}
+    <div class="buttons">
+        {% for button in page.buttons %}
+        <a class="button" href="{{ button.href }}">{{ button.text | markdownify | replace:'<p>','' | replace:'</p>','' }}</a>
+        {% endfor %}
+    </div>
+    {% endif %}
+
+    {% if layout.buttons %}
+    <div class="buttons">
+        {% for button in layout.buttons %}
+        <a class="button" href="{{ button.href }}">{{ button.text | markdownify | replace:'<p>','' | replace:'</p>','' }}</a>
+        {% endfor %}
+    </div>
+    {% endif %}
+
     {{ content }}
 </div>

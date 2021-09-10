@@ -2,23 +2,14 @@
 title: Ergo IRC Network
 layout: about
 classes: about
+buttons:
+    - text: Your Own Client
+      href: "ircs://irc.ergo.chat:6697/#ergo"
+    - text: KiwiIRC
+      href: https://ergo.chat/kiwi/
+    - text: gamja
+      href: https://ergo.chat/gamja/
 ---
-<a class="logo" href="/">
-    <img src="img/ergo-logo-dark-network.svg" title="Ergo IRC Network">
-</a>
-
-<div class="buttons">
-    <!-- <a class="button" href="/">Landing Page</a> -->
-    <a class="button" href="/about.html">Software</a>
-    <a class="button" href="#">Network</a>
-</div>
-
-<div class="buttons">
-    <a class="button" href="ircs://irc.ergo.chat:6697/#ergo">Your Own Client</a>
-    <a class="button" href="https://ergo.chat/kiwi/">KiwiIRC</a>
-    <a class="button" href="https://ergo.chat/gamja/">gamja</a>
-</div>
-
 `irc.ergo.chat` is the official self-hosted IRC network of the Ergo project. It hosts the official support channel for Ergo (`#ergo`). Other communities are welcome – come find us in `#ergo` and ask if you're interested in hosting your project or community here.
 
 To connect directly, configure your IRC client with:
