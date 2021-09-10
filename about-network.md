@@ -2,6 +2,7 @@
 title: Ergo IRC Network
 layout: about
 classes: about
+logo: ergo-logo-dark-network.svg
 buttons:
     - text: Your Own Client
       href: "ircs://irc.ergo.chat:6697/#ergo"
