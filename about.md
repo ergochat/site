@@ -12,7 +12,7 @@ buttons:
     - text: User Guide
       href: "https://github.com/ergochat/ergo/blob/master/docs/USERGUIDE.md#introduction"
 ---
-Ergo is a modern IRCd (IRC server software) written in Go.
+Ergo (formerly known as Oragono) is a modern IRCd (IRC server software) written in Go.
 
 Our core design principles are:
 
