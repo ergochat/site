@@ -39,4 +39,4 @@ SSL/TLS:  false
 
 -----
 
-For information on our server's distinctive features, see the [official user guide](https://github.com/ergochat/ergo/blob/master/docs/USERGUIDE.md).
+For information on our server's distinctive features, see the [official user guide](https://github.com/ergochat/ergo/blob/stable/docs/USERGUIDE.md).
