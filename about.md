@@ -8,9 +8,9 @@ buttons:
     - text: Latest Release
       href: "https://github.com/ergochat/ergo/releases"
     - text: Admin Manual
-      href: "https://github.com/ergochat/ergo/blob/master/docs/MANUAL.md#introduction"
+      href: "https://github.com/ergochat/ergo/blob/stable/docs/MANUAL.md#introduction"
     - text: User Guide
-      href: "https://github.com/ergochat/ergo/blob/master/docs/USERGUIDE.md#introduction"
+      href: "https://github.com/ergochat/ergo/blob/stable/docs/USERGUIDE.md#introduction"
 ---
 Ergo (formerly known as Oragono) is a modern IRCd (IRC server software) written in Go.
 
@@ -27,5 +27,5 @@ For more information, see our GitHub pages:
 
 * [GitHub Page](https://github.com/ergochat/ergo)
 * [Download The Latest Release](https://github.com/ergochat/ergo/releases)
-* [See The Admin Manual](https://github.com/ergochat/ergo/blob/master/docs/MANUAL.md)
-* [See The User Guide](https://github.com/ergochat/ergo/blob/master/docs/USERGUIDE.md)
+* [See The Admin Manual](https://github.com/ergochat/ergo/blob/stable/docs/MANUAL.md)
+* [See The User Guide](https://github.com/ergochat/ergo/blob/stable/docs/USERGUIDE.md)
