@@ -29,3 +29,5 @@ For more information, see our GitHub pages:
 * [Download The Latest Release](https://github.com/ergochat/ergo/releases)
 * [See The Admin Manual](https://github.com/ergochat/ergo/blob/stable/docs/MANUAL.md)
 * [See The User Guide](https://github.com/ergochat/ergo/blob/stable/docs/USERGUIDE.md)
+
+You can play with a running instance at [testnet.ergo.chat](https://testnet.ergo.chat).

@@ -40,3 +40,7 @@ SSL/TLS:  false
 -----
 
 For information on our server's distinctive features, see the [official user guide](https://github.com/ergochat/ergo/blob/stable/docs/USERGUIDE.md).
+
+-----
+
+Please note that `irc.ergo.chat` is our production network, used for real traffic. If you want to test Ergo, please use the official testnet (shared test instance) at [testnet.ergo.chat](https://testnet.ergo.chat).
