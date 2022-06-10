@@ -31,3 +31,7 @@ For more information, see our GitHub pages:
 * [See The User Guide](https://github.com/ergochat/ergo/blob/stable/docs/USERGUIDE.md)
 
 You can play with a running instance at [testnet.ergo.chat](https://testnet.ergo.chat).
+
+-----
+
+Release tags and binaries are signed with the GPG key `740FC947B135E7627D4D00F21996B89DF018DCAB` (expiring July 2025). You can obtain this key from `keyserver.ubuntu.com`, from [our website](/pubkey.txt), or from [GitHub](https://github.com/slingamn.gpg).
