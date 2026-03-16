@@ -1,0 +1,12 @@
+{{ define "bodyclass" }}about post{{ end }}
+{{ define "main" }}
+<div>
+    {{ partial "about-nav.html" . }}
+
+    <h1>{{ .Title }}</h1>
+
+    <p class="postinfo">{{ .Date.Format "02 Jan 2006" }}</p>
+
+    {{ .Content }}
+</div>
+{{ end }}

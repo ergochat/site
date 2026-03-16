@@ -1,0 +1,31 @@
+baseURL = "https://ergo.chat/"
+languageCode = "en-us"
+title = "Ergo IRC Server"
+
+disableKinds = ["taxonomy", "term", "section"]
+
+[permalinks]
+  posts = "/posts/:contentbasename/"
+
+# Extract post dates from filenames (YYYY-MM-DD-title.md convention)
+[frontmatter]
+  date = ["date", ":filename", ":default"]
+
+# Cap the RSS feed at 20 most recent posts. The old Jekyll site had no
+# pagination (all posts included), but an unbounded feed grows forever.
+# 20 is enough to cover several years of releases at the current cadence.
+rssLimit = 20
+
+[outputs]
+  home = ["HTML", "RSS"]
+
+[outputFormats.RSS]
+  baseName = "feed"
+  mediaType = "application/rss+xml"
+  rel = "alternate"
+  isPlainText = true
+  isHTML = false
+  noUgly = true
+
+[markup.goldmark.renderer]
+  unsafe = true
