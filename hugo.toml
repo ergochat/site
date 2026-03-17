@@ -1,5 +1,5 @@
 baseURL = "https://ergo.chat/"
-languageCode = "en-us"
+locale = "en-us"
 title = "Ergo IRC Server"
 
 disableKinds = ["taxonomy", "term", "section"]
