@@ -59,10 +59,10 @@ Temporary Items
 # Linux trash folder which might appear on any partition or disk
 .Trash-*
 
+# vim swapfiles
+*.swp
 
-### Jekyll ###
-_site/
-.sass-cache/
-.jekyll-metadata
-.jekyll-cache
-.vscode
+### Hugo ###
+public/
+.hugo_build.lock
+resources/

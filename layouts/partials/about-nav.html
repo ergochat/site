@@ -1,0 +1,12 @@
+{{ $logo := "ergo-logo-dark-server.svg" }}
+{{ with .Params.logo }}{{ $logo = . }}{{ end }}
+<a class="logo" href="/">
+    <img alt="Ergo Logo" src="/img/{{ $logo }}" title="Ergo IRC Server">
+</a>
+
+<div class="buttons">
+    <a class="button" href="/about">Server</a>
+    <a class="button" href="/about-network">Network</a>
+    <a class="button" href="/specs">Specs</a>
+    <a class="button" href="/news">News</a>
+</div>

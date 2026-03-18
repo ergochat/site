@@ -1,0 +1,19 @@
+{{- $pages := where .Site.RegularPages "Section" "posts" -}}
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+	<channel>
+		<title>{{ .Site.Title | html }}</title>
+		<description></description>
+		<link>{{ .Site.BaseURL }}</link>
+		<atom:link href="{{ .Site.BaseURL }}feed.xml" rel="self" type="application/rss+xml" />
+		{{ range $pages.ByDate.Reverse }}
+			<item>
+				<title>{{ .Title | html }}</title>
+				<description>{{ .Content | html }}</description>
+				<pubDate>{{ .Date.Format "Mon, 02 Jan 2006 15:04:05 -0700" }}</pubDate>
+				<link>{{ .Permalink }}</link>
+				<guid isPermaLink="true">{{ .Permalink }}</guid>
+			</item>
+		{{ end }}
+	</channel>
+</rss>

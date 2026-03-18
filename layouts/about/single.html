@@ -1,0 +1,16 @@
+{{ define "bodyclass" }}about{{ end }}
+{{ define "main" }}
+<div>
+    {{ partial "about-nav.html" . }}
+
+    {{ with .Params.buttons }}
+    <div class="buttons">
+        {{ range . }}
+        <a class="button" href="{{ .href | safeURL }}">{{ .text }}</a>
+        {{ end }}
+    </div>
+    {{ end }}
+
+    {{ .Content }}
+</div>
+{{ end }}

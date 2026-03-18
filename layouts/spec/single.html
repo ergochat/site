@@ -1,0 +1,23 @@
+{{ define "bodyclass" }}about spec{{ end }}
+{{ define "main" }}
+<div>
+    {{ partial "about-nav.html" . }}
+
+    <div class="buttons">
+        <a class="button" href="/nope"><code>ergo.chat/nope</code></a>
+    </div>
+
+    <h1>{{ .Title }}</h1>
+
+    {{ with .Params.copyrights }}
+    <div class="copyrights">
+        {{ range . }}
+        <p>Copyright &copy; {{ .period }} {{ .name }} &lt;{{ .email }}&gt;</p>
+        {{ end }}
+        <p>Unlimited redistribution and modification of this document is allowed.</p>
+    </div>
+    {{ end }}
+
+    {{ .Content }}
+</div>
+{{ end }}

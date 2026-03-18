@@ -1,0 +1,32 @@
+{{ define "bodyclass" }}about news{{ end }}
+{{ define "main" }}
+<div>
+    {{ $logo := "ergo-logo-dark.svg" }}
+    {{ with .Params.logo }}{{ $logo = . }}{{ end }}
+    <a class="logo" href="/">
+        <img alt="Ergo Logo" src="/img/{{ $logo }}" title="Ergo IRC Server">
+    </a>
+
+    <div class="buttons">
+        <a class="button" href="/about">Server</a>
+        <a class="button" href="/about-network">Network</a>
+        <a class="button" href="/specs">Specs</a>
+        <a class="button" href="/news">News</a>
+    </div>
+
+    {{ .Content }}
+
+    {{ $posts := where .Site.RegularPages "Section" "posts" }}
+    {{ $sortedPosts := $posts.ByDate.Reverse }}
+    {{ range $i, $post := $sortedPosts }}
+
+    <h2>{{ $post.Title }}</h2>
+
+    <p class="postinfo">{{ $post.Date.Format "02 Jan 2006" }} - <a href="{{ $post.RelPermalink }}">Link</a></p>
+
+    {{ $post.Content }}
+
+    {{ if lt (add $i 1) (len $sortedPosts) }}<hr>{{ end }}
+    {{ end }}
+</div>
+{{ end }}
